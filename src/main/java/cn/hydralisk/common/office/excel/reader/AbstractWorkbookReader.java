@@ -72,7 +72,7 @@ public abstract class AbstractWorkbookReader implements IExcelReader{
             return "";
         }
 
-        CellType cellType = cell.getCachedFormulaResultTypeEnum();
+        CellType cellType = cell.getCellTypeEnum();
 
         switch(cellType) {
             case BLANK:
