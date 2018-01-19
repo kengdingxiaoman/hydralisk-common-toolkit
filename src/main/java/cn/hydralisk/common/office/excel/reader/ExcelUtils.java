@@ -47,7 +47,7 @@ public abstract class ExcelUtils {
      * @return
      */
     public static final String convertToJavaDate(String str){
-        Date javaDate= DateUtil.getJavaDate(Double.valueOf(str));
+        Date javaDate = DateUtil.getJavaDate(Double.valueOf(str));
         return CellValueConvertUtils.format(javaDate);
     }
 
